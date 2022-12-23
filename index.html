@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSKR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            line-height: 1.6;
+            display: flex;
+            align-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <link href="css.css" rel="stylesheet">
+    <div class="container-fluid">
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <header id="home" class="header">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="header-content" id="home">
+                <h1>Welcome</h1>
+                <p>
+                    This is Vempati Siva Koti Reddy.<br> I am studying 1st year BTech in CSE at IIIT Hyderabad.
+                </p>
+                <div class="sm">
+                    <a href="https://github.com/VempatiSiva456"><i class="fa fa-github fa-lg fa-fw" style="color:#ffffff"></i></a>
+                    <a href="https://www.instagram.com/this_is_vskr"><i class="fa fa-instagram fa-lg fa-fw" style="color:#ffffff"></i></a>
+                    <a href="https://www.twitter.com/KotiVempati"><i class="fa fa-twitter fa-lg fa-fw" style="color:#ffffff"></i></a>
+                    <a href="https://www.facebook.com/sivakotireddy.vempati"><i class="fa fa-facebook fa-lg fa-fw" style="color:#ffffff"></i></a>
+                </div>
+            </section>
+        </header>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <h1>
+                About
+            </h1>
+            <table style="border-collapse: collapse;">
+                <tbody><tr>
+                    <th>About me</th>
+                    <td>Myself Vempati Siva Koti Reddy, a 19 years old Enthusiastic Student</td>
+                </tr>
+                <tr>
+                    <th>Profile Image</th>
+                    <td>
+                        <a href="https://web.iiit.ac.in/~vempati.reddy/profile.jpeg">
+                            <img src="profile.jpeg" alt="profile image" style="border-radius: 10px;" width="220rem">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Educational background</th>
+                </tr><tr>
+                    <td>Completed 10th class at ZPHS Veligandla</td>
+                </tr>
+                <tr>
+                    <td>Completed 2 Years PUC at <a href="https://www.rguktn.ac.in/">RGUKT Nuzvid</a></td>
+                </tr>
+                <tr>
+                    <td>Currently Studying BTech in CSE at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a></td>
+                </tr>
+                
+                <tr>
+                    <th rowspan="4">Achievements</th>
+                </tr><tr>
+                    <td>Received Brown 3 Belt in Karate</td>
+                </tr>
+                <tr>
+                    <td>Received Gold Medal in 6th International Shito Ryu Kan Karate Championship</td>
+                </tr>
+                <tr>
+                    <td>Received Prathibha Award from State(AP) Government</td>
+                </tr>
+                
+                <tr>
+                    <th>Skills</th>
+                    <td>Story Telling/Writing</td>
+                </tr>
+                <tr>
+                    <th>News and Updates</th>
+                    <td>
+                        <ul id="nu">
+                            <li>start updating</li>
+                        <li></li></ul>
+                        <input type="text" id="updating">
+                        <button onclick="updating()">update</button>
+                    </td>
+                </tr>
+            </tbody></table>
+        </section>
+        <br>
+        <section class="activity" id="activity">
+            <h1>
+                Activity
+            </h1>
+            <div>
+                <h2>Change background color to</h2>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <button onclick="chbg(this)" style="background-color: initial;">initial</button>
+                            <br><br>
+                            <button onclick="chbg(this)" style="background-color: orange;">orange</button>
+                            <br><br>
+                            <button onclick="chbg(this)" style="background-color: skyblue;">skyblue</button>
+                            <br><br>
+                            <button onclick="chbg(this)" style="background-color: lightgreen;">lightgreen</button>
+                            <br><br>
+                            <button onclick="chbg(this)" style="background-color: turquoise;">turquoise</button>
+                            <br><br>
+                            <button onclick="chbg(this)" style="background-color: pink;">pink</button>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div>
+                <h2>Change font size to</h2>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <button onclick="chfsize(this)" style="font-size: initial;">initial</button>
+                            <br><br>
+                            <button onclick="chfsize(this)" style="font-size: 15px;">15px</button>
+                            <br><br>
+                            <button onclick="chfsize(this)" style="font-size: 20px;">20px</button>
+                            <br><br>
+                            <button onclick="chfsize(this)" style="font-size: 25px;">25px</button>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </section>
+        <br>
+        <section class="contact" id="contact">
+            <h2>
+                Contact
+            </h2>
+            <div class="container">
+                <form>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required="">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required="">
+
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                    <br>
+                    <br>
+                    <label for="country">Course</label>
+                    <select id="course" name="course">
+                        <option value="csx" selected="selected">CSX</option>
+                        <option value="ecx">ECX</option>
+                    </select>
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+                <h4>
+                    <span>✉</span>
+                    Contact me:
+                </h4>
+                <ul class="contact">
+                    <li>
+                        <a href="mailto:vempatisiva7@gmail.com"><i class="fa fa-envelope fa-lg fa-fw" style="color:#080808"></i>vempatisiva7@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Made with ❤ by Siva</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+
+
+</body></html>

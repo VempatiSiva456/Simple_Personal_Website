@@ -1,0 +1,285 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #FFF;
+}
+
+.background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 25vw;
+    width: 40px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    width: 40px;
+    height: 10px;
+    border-color: #FFF;
+}
+
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 75vw;
+    top: 40vh;
+}
+
+.cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 25vw;
+    top: 50vh;
+}
+
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 80vw;
+    top: 30vh;
+}
+
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 90vw;
+    top: 10vh;
+}
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #FFF;
+    float: left;
+    margin: 25px 90px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    transition: .3s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EFEEF5;
+    transition: .5;
+    font-size: 25px;
+    margin-left: 16px;
+}
+
+nav ul li:hover a {
+    text-decoration: none;
+    color: #591BC5;
+    ;
+}
+
+nav ul li:hover {
+    height: 45px;
+    padding-top: 30px;
+    margin-top: -30px;
+    background: #EFEEF5;
+    text-decoration: none;
+    transform: skew(15deg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Raleway&display=swap');
+
+.about h1 {
+    background-color: palevioletred;
+    color: #EFEEF5;
+    text-align: center;
+}
+
+.about button {
+    color: #591BC5;
+}
+
+.activity h1 {
+    background-color: palevioletred;
+    text-align: center;
+    color: #EFEEF5;
+}
+
+.activity h2 {
+    text-align: center;
+    color: #591BC5;
+}
+
+.activity table {
+    color: #591BC5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity table button {
+    color: #591BC5;
+}
+
+.about table {
+    text-align: left;
+    color: #591BC5;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    border: 0.1rem solid;
+    padding: 0.5rem;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-content {
+    margin-top: 20%;
+    text-align: center;
+    color: #EFEEF5;
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 3px;
+}
+
+.header-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+.header-content button {
+    width: 140px;
+    margin: 20px 10px;
+    color: #591BC5;
+    font-size: 17px;
+    border: 1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-content button:hover {
+    border-radius: 0;
+}
+
+.contact h2 {
+    background-color: palevioletred;
+    color: #EFEEF5;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #591BC5;
+}
+
+input[type=submit] {
+    background-color: palevioletred;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: palevioletred;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #591BC5;
+    padding: 20px;
+}
+
+.footer {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #d89300;
+}
+
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
